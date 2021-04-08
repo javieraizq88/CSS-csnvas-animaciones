@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvas annimacion </title>
     <script>
-        var can = function () {
+        var can2 = function () {
             var canvas;
             var context;
             var x = 0;
@@ -32,7 +32,7 @@
                     context.fillRect(currectX(), currectY(), 5, 5);
                 },
                 init: function () {
-                    canvas = document.getElementById("myCanvas");
+                    canvas = document.getElementById("myCanvas2");
                     context = canvas.getContext("2d");
                     context.translate(0, 0); 
                     setInterval(can.draw, 150); //tiempo
@@ -40,13 +40,13 @@
             }
         }();
 
-        window.onload = can.init;
+        window.onload = can2.init;
 
     </script>
 </head>
 
 <body>
-    <canvas id="myCanvas" height="10000" width="1000">
+    <canvas id="myCanvas2" height="10000" width="1000">
 
     </canvas>
 </body>
